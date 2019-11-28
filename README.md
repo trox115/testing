@@ -13,6 +13,7 @@ In this project we used:
 - JavaScript
 - ESLint
 - NPM
+- Jester
 
 # Author
 
