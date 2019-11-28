@@ -3,8 +3,12 @@ function caesarC(string, shift) {
   for (let i = 0; i < string.length; i += 1) {
     const charN = string[i].charCodeAt();
 
-    if (charN >= 97 && charN <= 122) {
+    if (charN >= 97 && charN <= 122 && shift + charN <= 122) {
       corrected += String.fromCharCode(charN + shift);
+    } else if (charN >= 97 && charN <= 122 && shift + charN > 122) {
+      corrected += String.fromCharCode(charN - shift);
+    } else {
+      corrected += string[i];
     }
   }
   return corrected;

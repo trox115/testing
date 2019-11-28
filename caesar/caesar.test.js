@@ -7,3 +7,19 @@ test('Check if A with 1 shift is B', () => {
 test('Check if A with 13 shift is N', () => {
   expect(caesarC('a', 13)).toBe('n');
 });
+
+test('Check if A with 13 shift is N', () => {
+  expect(caesarC('n', 13)).toBe('a');
+});
+
+test('check if result is hello world', () => {
+  expect(caesarC('uryyb jbeyq', 13)).toBe('hello world');
+});
+
+test('check if result is attack at dawn', () => {
+  expect(caesarC('nggnpx ng qnja', 13)).toBe('attack at dawn');
+});
+// this is failing
+test('check if result is attack at dawn', () => {
+  expect(caesarC('attack at dawn', 5)).toBe('fyyfhp fy ifbs');
+});
