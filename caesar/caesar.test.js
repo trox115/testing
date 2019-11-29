@@ -13,16 +13,21 @@ test('Check if A with 13 shift is N', () => {
 });
 
 test('check if result is hello world', () => {
-  expect(caesarC('uryyb jbeyq', 13)).toBe('hello world');
+  expect(caesarC('uryyb, jbeyq?', 13)).toBe('hello, world?');
 });
 
 test('check if result is attack at dawn', () => {
   expect(caesarC('nggnpx ng qnja', 13)).toBe('attack at dawn');
 });
-// this is failing
+
 test('check if result is attack at dawn', () => {
   expect(caesarC('attack at dawn', 5)).toBe('fyyfhp fy ifbs');
 });
+
 test('check if result is attack at dawn', () => {
   expect(caesarC('abcdefghijklmnopqrstuvwxyz', 1)).toBe('bcdefghijklmnopqrstuvwxyza');
+});
+
+test('check if result is attack at dawn', () => {
+  expect(caesarC('Attack at Dawn', 5)).toBe('Fyyfhp fy Ifbs');
 });
