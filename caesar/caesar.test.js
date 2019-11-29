@@ -23,3 +23,6 @@ test('check if result is attack at dawn', () => {
 test('check if result is attack at dawn', () => {
   expect(caesarC('attack at dawn', 5)).toBe('fyyfhp fy ifbs');
 });
+test('check if result is attack at dawn', () => {
+  expect(caesarC('abcdefghijklmnopqrstuvwxyz', 1)).toBe('bcdefghijklmnopqrstuvwxyza');
+});
