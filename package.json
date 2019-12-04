@@ -15,7 +15,8 @@
     "prettier": "1.19.1"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "watch": "jest --watch"
   },
   "author": "",
   "license": "ISC"
