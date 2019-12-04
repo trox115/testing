@@ -8,6 +8,10 @@ test('sum 0 + 0 = 0', () => {
   expect(Calc.add(0, 0)).toBe(0);
 });
 
+test('sum -1 + 0 = -1', () => {
+  expect(Calc.add(-1, 0)).toBe(-1);
+});
+
 test('substract 3 - 3 = 0', () => {
   expect(Calc.substract(3, 3)).toBe(0);
 });
